@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Airbnb-Clone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@1&family=Inter&family=Nunito+Sans:opsz@6..12&family=Poppins&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-left">
+          <a href="#"><img src="./Assets/logo.png" alt="" class="" /></a>
+        </div>
+        <div class="nav-center">
+          <ul>
+            <li><a href="#">Place to stay</a></li>
+            <li><a href="#">Experiences</a></li>
+            <li><a href="#">Online Experiences</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <div><p>Become a Host</p></div>
+          <div>
+            <i class="fa-solid fa-globe fa-xl" style="color: #ffffff"></i>
+          </div>
+          <div class="profile-menu">
+            <i class="fa-solid fa-bars" style="color: #616161"></i>
+            <span class="profile"
+              ><i class="fa-solid fa-user fa-lg" style="color: #9e9e9e"></i
+            ></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="search-container">
+          <div>
+            <h4>Location</h4>
+            <input
+              type="text"
+              id="Search-location"
+              placeholder="Where are you going?"
+            />
+          </div>
+          <div>
+            <h4>Check in</h4>
+            <input type="date" id="check-in-date" placeholder="Add dates" />
+          </div>
+          <div>
+            <h4>Check out</h4>
+            <input type="date" id="Check-out-date" placeholder="Add dates" />
+          </div>
+          <div class="GuestsDiv">
+            <h4>Guests</h4>
+            <i id="GuestsContainer">Guests...</i>
+            <div id="Guests" class="hide">
+              <input type="text" id="adult" size="5" placeholder="Adult..." />
+              <input type="text" id="child" size="5" placeholder="Child..." />
+              <input type="text" id="infant" size="5" placeholder="Infant..." />
+              <input type="text" id="pets" size="5" placeholder="Pets..." />
+            </div>
+          </div>    
+          <img
+            src="./Assets/searchbutton.svg"
+            alt="search-button"
+            id="search-button"
+          />
+        </div>
+        <div class="hero"></div>
+      </section>
+      <section class="Trip-section">
+        <h2>Inspiration for your next trip</h2>
+        <div class="next-trip-card-container">
+          <div class="card">
+            <div class="card-img-top">
+              <img src="./Assets/img (2).png" alt="" />
+            </div>
+            <div class="card-body">
+              <h2>Nashville</h2>
+              <p>53 miles away</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img-top">
+              <img src="./Assets/img (2).png" alt="" />
+            </div>
+            <div class="card-body">
+              <h2>Nashville</h2>
+              <p>53 miles away</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img-top">
+              <img src="./Assets/img (2).png" alt="" />
+            </div>
+            <div class="card-body">
+              <h2>Nashville</h2>
+              <p>53 miles away</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img-top">
+              <img src="./Assets/img (2).png" alt="" />
+            </div>
+            <div class="card-body">
+              <h2>Nashville</h2>
+              <p>53 miles away</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="Gift-section">
+        <div class="gift-text">
+          <p>Shop Airbnb gift cards</p>
+          <button class="gift-button">Learn more</button>
+        </div>
+        <div class="gift-img">
+          <img src="./Assets/Gift Cards.png" alt="" />
+        </div>
+      </section>
+      <section class="Hosting-section">
+        <div class="hosting-text">
+          <p>Questions about hosting?</p>
+          <button class="hosting-button">Ask a Superhost</button>
+        </div>
+      </section>
+      <section class="future-gateway-section">
+        <h2>Inspiration for future getaways</h2>
+        <div class="future-gateway-menu">
+          <ul>
+            <li>
+              <a href="#arts & culture">Destinations for arts & culture</a>
+            </li>
+            <li><a href="">Destinations for outdoor adventure</a></li>
+            <li><a href="">Mountain cabins</a></li>
+            <li><a href="">Beach destinations</a></li>
+            <li><a href="">Popular destinations</a></li>
+            <li><a href="">Unique Stays</a></li>
+          </ul>
+        </div>
+        <div class="slider-menu">
+          <div class="my-list p-3">
+            <div class="card shadow p-3 d-inline-block flex-column" id="arts & culture">
+              <table>
+                <tr>
+                  <td>
+                    <p>Main Text 1</p>
+                    <p class="subtitle">Subtitle Text 1</p>
+                  </td>
+                  <td>
+                    <p>Main Text 2</p>
+                    <p class="subtitle">Subtitle Text 2</p>
+                  </td>
+                  <td>
+                    <p>Main Text 3</p>
+                    <p class="subtitle">Subtitle Text 3</p>
+                  </td>
+                  <td>
+                    <p>Main Text 4</p>
+                    <p class="subtitle">Subtitle Text 4</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Main Text 5</p>
+                    <p class="subtitle">Subtitle Text 5</p>
+                  </td>
+                  <td>
+                    <p>Main Text 6</p>
+                    <p class="subtitle">Subtitle Text 6</p>
+                  </td>
+                  <td>
+                    <p>Main Text 7</p>
+                    <p class="subtitle">Subtitle Text 7</p>
+                  </td>
+                  <td>
+                    <p>Main Text 8</p>
+                    <p class="subtitle">Subtitle Text 8</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Main Text 9</p>
+                    <p class="subtitle">Subtitle Text 9</p>
+                  </td>
+                  <td>
+                    <p>Main Text 10</p>
+                    <p class="subtitle">Subtitle Text 10</p>
+                  </td>
+                  <td>
+                    <p>Main Text 11</p>
+                    <p class="subtitle">Subtitle Text 11</p>
+                  </td>
+                  <td>
+                    <p>Main Text 12</p>
+                    <p class="subtitle">Subtitle Text 12</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="card shadow p-3 d-inline-block flex-column" id="arts & culture">
+              <table>
+                <tr>
+                  <td>
+                    <p>Main Text 1</p>
+                    <p class="subtitle">Subtitle Text 1</p>
+                  </td>
+                  <td>
+                    <p>Main Text 2</p>
+                    <p class="subtitle">Subtitle Text 2</p>
+                  </td>
+                  <td>
+                    <p>Main Text 3</p>
+                    <p class="subtitle">Subtitle Text 3</p>
+                  </td>
+                  <td>
+                    <p>Main Text 4</p>
+                    <p class="subtitle">Subtitle Text 4</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Main Text 5</p>
+                    <p class="subtitle">Subtitle Text 5</p>
+                  </td>
+                  <td>
+                    <p>Main Text 6</p>
+                    <p class="subtitle">Subtitle Text 6</p>
+                  </td>
+                  <td>
+                    <p>Main Text 7</p>
+                    <p class="subtitle">Subtitle Text 7</p>
+                  </td>
+                  <td>
+                    <p>Main Text 8</p>
+                    <p class="subtitle">Subtitle Text 8</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Main Text 9</p>
+                    <p class="subtitle">Subtitle Text 9</p>
+                  </td>
+                  <td>
+                    <p>Main Text 10</p>
+                    <p class="subtitle">Subtitle Text 10</p>
+                  </td>
+                  <td>
+                    <p>Main Text 11</p>
+                    <p class="subtitle">Subtitle Text 11</p>
+                  </td>
+                  <td>
+                    <p>Main Text 12</p>
+                    <p class="subtitle">Subtitle Text 12</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="Upper_footer">
+      <div class="Support">
+        <table class="footer-table">
+          <tr><td><h4>Support</h4></td></tr>
+          <tr><td><a href="">Help Center</a></td></tr>
+          <tr><td><a href="">Safety information</a></td></tr>
+          <tr><td><a href="">Cancellation options</a></td></tr>
+          <tr><td><a href="">Our COVID-19 Response</a></td></tr>
+          <tr><td><a href="">Supporting people with disabilities</a></td></tr>
+          <tr><td><a href="">Report a neighborhood concern</a></td></tr>
+        </table>
+      </div>
+    
+      <div class="Community">
+        <table class="footer-table">
+          <tr><td><h4>Community</h4></td></tr>
+          <tr><td><a href="">Airbnb.org: disaster relief housing</a></td></tr>
+          <tr><td><a href="">Support: Afghan refugees</a></td></tr>
+          <tr><td><a href="">Celebrating diversity & belonging</a></td></tr>
+          <tr><td><a href="">Combating discriminatino</a></td></tr>
+        </table>
+      </div>
+
+      <div class="Hosting">
+        <table class="footer-table">
+          <tr><td><h4>Hosting</h4></td></tr>
+          <tr><td><a href="">Try hosting</a></td></tr>
+          <tr><td><a href="">AirCover: protection for Hosts</a></td></tr>
+          <tr><td><a href="">Explore hosting resources</a></td></tr>
+          <tr><td><a href="">Visit our community forum</a></td></tr>
+          <tr><td><a href="">How to host responsibly</a></td></tr>
+        </table>
+      </div>
+
+      <div class="About">
+        <table class="footer-table">
+          <tr><td><h4>About</h4></td></tr>
+          <tr><td><a href="">Newsroom</a></td></tr>
+          <tr><td><a href="">Learn about new features</a></td></tr>
+          <tr><td><a href="">Letter from our founders</a></td></tr>
+          <tr><td><a href="">Careers</a></td></tr>
+          <tr><td><a href="">Investors</a></td></tr>
+          <tr><td><a href="">Airbnb Luxe</a></td></tr>
+        </table>
+      </div>
+      </section>
+      <hr>
+      <div class="Lower-footer">
+        <div>
+          <i class="fa-regular fa-copyright" style="color: #9a9b9e;"></i>
+          2022 Airbnb, inc. 
+          <a href="">Privacy</a>
+          <a href="">Term</a>
+          <a href="">Sitemap</a>
+        </div>
+        <div style="justify-content: flex-end;"> 
+          <i class="fa-solid fa-globe" style="color: #565658;"></i>
+          <a href="">English (US)</a>
+          <i class="fa-solid fa-dollar-sign" style="color: #535455;"></i>
+          <a href="">USD</a>
+          <i class="fa-brands fa-facebook" style="color: #565658;"></i>
+          <i class="fa-brands fa-twitter" style="color: #4e4f50;"></i>
+          <i class="fa-brands fa-instagram" style="color: #565658;"></i>
+        </div>
+      </div>
+    </footer>
+    <script src="./Script/script.js"></script>
+  </body>
+</html>

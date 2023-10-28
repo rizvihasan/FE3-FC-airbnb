@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./Assets/logo.png" type="image/x-icon">
+    <title>Airbnb-Clone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@1&family=Inter&family=Nunito+Sans:opsz@6..12&family=Poppins&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Css/style.css" />
+    <link rel="stylesheet" href="./Css/search-style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-left">
+          <a href="#"><img src="./Assets/logo_red.png" alt="" class="" /></a>
+        </div>
+        <div class="nav-center">
+            <form class="search-container" method="get">
+                <div>
+                  <input type="text" placeholder="Bordeaux" id="sortByLocation" required>
+                </div>
+                <div>
+                  <input type="text" placeholder="Feb 19-26" id="sortByDate" required>
+                </div>
+                <div>
+                  <input type="text" placeholder="2 guests" id="sortByGuest" required>
+                </div>
+                <button id="SearchButton" type="submit" class="SearchButton">
+                <img
+                  src="./Assets/searchbutton.svg"
+                  alt="search-button-img"
+                  class="searchButtonImg"
+                /></button>
+              </form>
+        </div>
+        <div class="nav-right">
+          <div><p>Become a Host</p></div>
+          <div>
+            <i class="fa-solid fa-globe fa-xl" style="color: #000"></i>
+          </div>
+          <div class="profile-menu">
+            <i class="fa-solid fa-bars" style="color: #616161"></i>
+            <span class="profile"
+              ><i class="fa-solid fa-user fa-lg" style="color: #9e9e9e"></i
+            ></span>
+          </div>
+        </div>
+      </nav>
+      <div class="Sort_filters">
+        <select class="filterButton" id="sortByPrice">
+          <option value="Price" selected>Price</option>
+          <option value="$30-50">$ 30-50</option>
+          <option value="$50-70">$ 50-70</option>
+          <option value="$70-90">$ 70-90</option>
+          <option value="$90-110">$ 90-110</option>
+          <option value="$110-130">$ 110-130</option>
+          <option value="$130-150">$ 130-150</option>
+          <option value="$150-170">$ 150-170</option>
+          <option value="$170-190">$ 170-190</option>
+          <option value="$190-210">$ 190-210</option>
+          <option value="$210-230">$ 210-230</option>
+        </select>
+        <select class="filterButton" id="sortByPlaceType">
+          <option value="null" selected>Type of place</option>
+        </select>
+        <button class="filterButton filterButtonUser" id="1">Free Cancellation</button>
+        <button class="filterButton filterButtonUser" id="2">Wifi</button>
+        <button class="filterButton filterButtonUser" id="3">Kitchen</button>
+        <button class="filterButton filterButtonUser" id="4">Air conditioning</button>
+        <button class="filterButton filterButtonUser" id="5">Washer</button>
+        <button class="filterButton filterButtonUser" id="6">Iron</button>
+        <button class="filterButton filterButtonUser" id="7">Dedicated workspace</button>
+        <button class="filterButton filterButtonUser" id="8">Free parking</button>
+        <button class="filterButton filterButtonUser" id="9">Dryer</button>
+        <button class="filterButton" id="12"><i class="fa-solid fa-sliders" style="color: #050505;"></i> Filters</button>
+       
+    </div>
+    </header>
+    <main>
+        <section class="search_results">
+          <h4 id="totalAvailable">Number+ stays in location</h4>
+          <hr>
+        <!-- search result -->
+          <div class="results_list" id="results_list">
+            <!-- all search properties available -->
+            <!-- <div class="results">
+              <div class="result-img">
+                <img src="./Assets/img (4).png" alt="">
+              </div>
+              <div class="result-details">
+                <div class="name_favorite">
+                  <div>
+                    <p>Entire home in Bordeaux</p>
+                    <h4 class="result-name" id="result-name">Bordeaux Getaway</h4>
+                  </div>
+                  <div class="favorite">
+                    <i class="fa-solid fa-heart fa-xl" style="color: #e41111;"></i>
+                  </div>
+                </div>
+                <div>
+                  <p>4-6 guests · Entire Home · 5 beds · 3 bath</p>
+                  <p>Wifi · Kitchen · Free Parking</p>
+                </div>
+                <div class="rating_price">
+                  <p>5.0 <i class="fa-solid fa-star" style="color: #ffd43b;"></i> (318 reviews)</p>
+                  <p class="price"><span>$350</span> / night</p>
+                </div>
+              </div>
+            </div> -->
+            <img src="./Assets/logo_red.png" alt="">
+
+          </div>
+        </section>
+        <section class="search_results_map" id="map">
+          <!-- <img src="./Assets/map.png" alt="result_location" id="result_location" class="result_location"> -->
+        </section >
+    </main>
+    <script src="./Script/Search.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5hOu-njunqLb_AljVIoxolakf_pNJ7yY&callback=emp" async defer></script>
+</body>
+</html>

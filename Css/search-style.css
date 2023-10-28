@@ -1,0 +1,283 @@
+header {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  z-index: 100000;
+}
+nav > div {
+  color: black;
+}
+.nav-center {
+  justify-content: center;
+  flex: 0.4;
+  border-radius: 2rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.search-container {
+  width: 90%;
+  border-radius: 0px;
+  padding: 0.2rem;
+}
+.search-container div {
+  border-right: 1px solid rgb(216, 216, 216);
+  margin: 0;
+  margin-left: 0.5rem;
+  flex: 1;
+}
+
+.SearchButton {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.searchButtonImg {
+  width: 40px;
+}
+.Sort_filters {
+  display: flex;
+  gap: 0.5rem;
+}
+.filterButton {
+  background-color: rgb(241, 241, 241);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 99.5vw;
+  height: 80vh;
+}
+.search_results {
+  flex: 0.6;
+  height: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.search_results > hr {
+  width: 100%;
+  height: 1px;
+  background-color: lightgrey;
+}
+.results_list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 65vh;
+  overflow-y: scroll;
+  gap: 1rem;
+}
+.results_list::-webkit-scrollbar {
+  display: none;
+}
+.results {
+  display: flex;
+  width: 90%;
+  gap: 1rem;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.result-img {
+  flex: 0.3; /* Set the flex value to 0.3 to control the width */
+  max-height: 80%; /* Ensure the max height is not exceeded */
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.result-img img {
+  max-width: 100%; /* Maximum image width is 100% of the container width */
+  max-height: 100%; /* Maximum image height is 100% of the container height */
+  width: 100%; /* Set the image width to 100% to fit within the container */
+  height: auto;
+  object-fit: cover;
+}
+
+.result-details {
+  flex: 0.7; /* Adjust the flex value for .result-details accordingly */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-height: 100%; /* Ensure the details height is no more than the container height */
+}
+
+.name_favorite {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.favorite {
+  margin: 0 0.8rem 0 0;
+}
+
+.result-details p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: rgb(105, 105, 105);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.result-name {
+  margin: 0.3rem 0;
+}
+
+.rating_price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price > span {
+  font-size: 1rem;
+  color: black;
+  font-weight: 600;
+  padding: 0.2rem;
+}
+.price:hover{
+  background-color: rgb(250, 184, 184);
+  border-radius: 0.5rem;
+}
+.search_results_map {
+  /* border: 1px solid black; */
+  flex: 0.4;
+  height: 100%;
+  box-sizing: border-box;
+}
+.result_location {
+  width: 100%;
+  height: 100%;
+}
+.modal{
+  display: block;
+  width: 400px;
+  height: auto;
+  background-color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  gap: 1rem;
+  text-align: center;
+  z-index: 1000000;
+}
+.booking_rate_review p {
+  display: flex;
+  justify-content: space-between;
+}
+.booking_table {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.booking_table td {
+  text-align: left;
+  padding: 0;
+  padding-top: 1rem;
+}
+.booking_table td:nth-child(even) {
+  text-align: right;
+}
+.booking_table tr:last-child td {
+  padding-bottom: 1rem;
+}
+.booking_table tfoot {
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-top: 1px solid gray;
+}
+.CloseBtn{
+  background-color: #de3151;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: 500;
+  padding: 0.3rem 0.5rem;
+  box-shadow: 0 0 15px rgb(201, 201, 201);
+}
+.Active {
+  background-color: rgb(170, 170, 170);
+}
+
+@media (max-width: 768px) {
+  .Sort_filters {
+    width: 100vw;
+    overflow-x: scroll;
+    gap: 0.2rem;
+  }
+  .filterButton {
+    font-size: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.5rem;
+  }
+  main {
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    width: 100vw;
+    height: 100vh;
+  }
+  .search_results {
+    width: 100%;
+    padding: 1rem;
+    flex: 0.5;
+  }
+
+  .search_results_map {
+    width: 100%;
+    flex: 0.6;
+  }
+  
+  .results_list {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 40vh;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .results {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .result-img {
+    width: 100%;
+  }
+  
+  .result-img img {
+    max-width: 100%; /* Maximum image width is 100% of the container width */
+    object-fit: cover;
+  }
+  
+  .result-details {
+    width: 100%;
+    gap: 0rem;
+  }
+  
+  .result-details p {
+    font-size: 0.7rem;
+  }
+  
+  .result-name {
+    font-size: 0.8rem;
+  }
+
+  .rating_price {
+    justify-content: space-between;
+  }
+
+}
